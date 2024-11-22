@@ -1,0 +1,37 @@
+@import '../../../styles/mixins.scss';
+.about {
+	padding: 100px 0;
+	@include mediaPhone {
+		padding: 50px 0;
+	}
+}
+.container {
+}
+.about-txt {
+	font-size: 0.8em;
+	margin-bottom: 40px;
+}
+.about-row {
+	display: flex;
+	justify-content: space-between;
+	column-gap: 30px;
+	align-items: center;
+	@include mediaTablet {
+		flex-direction: column;
+		align-items: flex-start;
+		row-gap: 30px;
+	}
+}
+.about-title-h1 {
+	font-size: 1.5em;
+}
+.about-title-p {
+	font-size: 1em;
+}
+
+.about-txt-1 {
+	line-height: 140%;
+}
+.about-txt-2 {
+	line-height: 140%;
+}

@@ -1,0 +1,109 @@
+@import './../../styles/mixins.scss';
+.header {
+	background-image: url('./../../assets/header/main.webp');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 800px;
+	@include mediaPhone {
+		height: 600px;
+	}
+}
+.header__up {
+	padding: 10px 0;
+	background-color: #173d33cc;
+}
+
+.header__up-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header__up-logo {
+	display: flex;
+	align-items: center;
+	column-gap: 8px;
+}
+
+.logo-img {
+	height: 48px;
+	@include mediaSmallPhone {
+		height: 32px;
+	}
+}
+.logo-text {
+	@include mediaSmallPhone {
+		font-size: 0.8em;
+	}
+	color: white;
+}
+.header__up-nav {
+}
+.header-nav-list {
+	display: flex;
+	column-gap: 50px;
+	@include mediaPhone {
+		font-size: 0.8em;
+		column-gap: 10px;
+	}
+	@include mediaSmallPhone {
+		column-gap: 5px;
+	}
+}
+
+.header-nav-item {
+	position: relative;
+	color: white;
+	font-weight: 700;
+	&::after {
+		content: '';
+		position: absolute;
+		bottom: -3px;
+		left: 0;
+		width: 0;
+		height: 2px;
+		background-color: white;
+		transition: width 0.3s;
+	}
+	&:hover::after {
+		width: 100%;
+	}
+}
+.header__up-btn {
+	padding: 9px 15px;
+	background-color: #55ca44;
+	border-radius: 14px;
+	@include mediaTablet {
+		display: none;
+	}
+}
+
+.headeer__down-center {
+	text-align: center;
+}
+.title {
+	font-size: 2.5em;
+	font-weight: 700;
+	color: white;
+	margin-top: 200px;
+	text-shadow: 2px 0 2px #000000, 0 2px 2px #000000, -2px 0 2px #000000, 0 -2px 2px #000000;
+	@include mediaPhone {
+		margin-top: 100px;
+		font-size: 1.5em;
+	}
+}
+.title-text {
+	color: white;
+	font-weight: 500;
+	margin-top: 20px;
+	font-size: 1.2em;
+	@include mediaPhone {
+		font-size: 1em;
+	}
+}
+.header__down-btn {
+	margin-top: 20px;
+	padding: 9px 15px;
+	background-color: #55ca44;
+	border-radius: 14px;
+}

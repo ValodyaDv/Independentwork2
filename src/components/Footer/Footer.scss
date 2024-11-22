@@ -1,0 +1,28 @@
+@import './../../styles/mixins.scss';
+.footer {
+	padding: 50px 0px;
+	background-color: black;
+	border-top: 4px solid greenyellow;
+}
+
+.footer-content {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	@include mediaTablet {
+		flex-direction: column;
+		row-gap: 30px;
+	}
+}
+.footer-text {
+	color: white;
+	font-weight: 700;
+}
+.footer-media {
+	display: flex;
+	column-gap: 20px;
+}
+.footer-media-item {
+	height: 48px;
+	width: 48px;
+}

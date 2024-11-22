@@ -1,0 +1,32 @@
+.join-card {
+	padding: 32px;
+	background-color: #f1f0ec;
+	border-radius: 20px;
+	max-width: 390px;
+	min-height: 600px;
+}
+.join-card-img {
+	// width: 390px;
+	height: 260px;
+	margin-bottom: 10px;
+}
+.join-card-title {
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.join-card-text {
+	font-size: 0.8em;
+	margin-bottom: 20px;
+	line-height: 1.5;
+}
+
+.join-btn-center {
+	text-align: center;
+}
+.join-card-btn {
+	text-align: center;
+	font-size: 0.9em;
+	padding: 10px 20px;
+	background-color: #55ca44;
+	border-radius: 14px;
+}

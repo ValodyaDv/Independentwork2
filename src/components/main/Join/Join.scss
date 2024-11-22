@@ -1,0 +1,19 @@
+.join {
+	padding-bottom: 80px;
+}
+
+.join-title {
+	font-size: 2.5em;
+	span {
+		color: #3a9b5b;
+	}
+	margin-bottom: 64px;
+}
+.join-cards {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	column-gap: 6%;
+	row-gap: 40px;
+}
